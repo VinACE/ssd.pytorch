@@ -160,7 +160,7 @@ def train():
         if iteration in cfg['lr_steps']:
             step_index += 1
             adjust_learning_rate(optimizer, args.gamma, step_index)
-
+        breakpoint()
         # load train data
         images, targets = next(batch_iterator)
 
